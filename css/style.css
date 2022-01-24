@@ -41,18 +41,77 @@ section p{color: white; font-size: 1.6rem; text-align: center; padding-top: 30px
 .card-img-wrapper img{object-fit: cover;width: 100%;height: 100%;border-radius: 10%;opacity: 0.8;}
 .card:hover .card-img-wrapper img{opacity: 0.5;transition: .5s;}
 
-div.card-info{position: absolute;text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0); opacity: 0; visibility: hidden; bottom: -40rem;}
+div.card-info{position: absolute;text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0); opacity: 0; bottom: -40rem;}
 div.card-info h2{width: 50%;color: white;font-size: 2rem;margin-left: 15px;}
 div.card-info h3{margin-left: 15px;margin-bottom:20px ;color: rgb(59, 185, 133);font-size: 0.9rem;font-weight: lighter;}
-div.card-info buttom{
-    opacity: 0;
-    visibility: hidden;
-    width: 8rem;
-    height: 2.5rem;
-    border: none;
-}
+div.card-info buttom{visibility: hidden;width: 8rem;height: 2.5rem;border: none;}
+
 div.card:hover .card-info{transition: 1.5s;bottom: 25rem;opacity: 1;visibility: visible;}
+
+div.card:hover .card-info buttom{transition: 1.5s;bottom: 25rem;opacity: 1;visibility: visible; text-align: center; margin-left: 25px;}
 
 /*sessao-cards:final*/
 
 
+@media screen and (max-width: 768px){
+    header{background-color: #000000; height: auto;min-height: 65px;}
+
+/*logo*/
+.logo{color: white; text-shadow: -5px 4px 0.4rem rgb(121, 116, 116); font-size: 1rem; float: left; padding-left: 5%; padding-top: 5%; cursor: pointer;}
+.logo b{color:#79AE92;}
+/*logo:final*/
+
+/*menu*/
+.menu{right: 2%; padding-top: 1%;  word-spacing: 10px; position: absolute;}
+.menu li{display: block;}
+.menu a{color: white; text-decoration: none; font-size: .8rem;}
+/*menu:final*/
+
+/*Rede social*/
+section.rede-social{background-color: #79AE92; height: auto; width: 100%;text-align: center; border-top:solid 3px#1C5560;}
+section.rede-social a{color: #ccc; font-size: 2rem; margin:0px 3%;}
+/*Rede social:Final*/
+
+/*banner*/
+section.banner{background-image: url(/img/Img01.png);height: 200px;width: 100%;}
+section h1{ text-align: center; color: #389baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2rem;}
+section p{color: white; font-size: 1rem; text-align: center; padding-top: 30px;}
+/*banner:final*/
+
+/*sessao-cards*/
+.sessao-projetos{display: flex;justify-content: center;border-top: 3px solid #1C5560;}
+
+.card{display: inline-block;width: 20rem;height: 30rem;margin:10px 55px;}
+
+.card-img-wrapper{width: 90%;height: 90%;background-color: black;border-radius: 10%; position: relative;}
+
+.card-img-wrapper img{object-fit: cover;width: 100%;height: 100%;border-radius: 10%;opacity: 0.5;}
+
+
+div.card-info{text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0)}
+
+div.card-info{
+    text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0);}
+
+div.card-info h2{width: 50%;
+    color: white;
+    font-size: 2rem;
+    margin-left: 15px;}
+
+div.card-info h3{
+    margin-left: 15px;
+    margin-bottom:20px ;
+    color: rgb(59, 185, 133);
+    font-size: 0.9rem;
+    font-weight: lighter;}
+
+div.card-info buttom{
+    width: 8rem;
+    height: 2.5rem;
+    border: none;}
+
+    div.card:hover .card-info {transition: 1.5s; position: absolute;}
+    div.card:hover .card-info.segundo{transition: 1.5s;bottom:-15rem;}
+    div.card:hover .card-info.terceiro{transition: 1.5s;bottom:-45rem;}
+    div.card:hover .card-info buttom{transition: 1.5s; text-align: center; margin-left: 25px;}
+}
