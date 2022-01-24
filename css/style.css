@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+:root {
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Muli", serif;}
+
 /*Auxiliares*/
 *{margin: 0; padding: 0; box-sizing: border-box;}
 body{ background-color: #1C5560;}
@@ -7,6 +15,7 @@ header{background-color: #000000; height: 50px;}
 .select{border-bottom: 3px solid #79AE92;text-shadow: 0 5px 0.5rem #79AE92;}
 .btn{padding: 5px;font-size: 1rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);
     background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}
+
 /*auxiliares:final*/
 
 /*logo*/
@@ -35,26 +44,19 @@ section p{color: white; font-size: 1.6rem; text-align: center; padding-top: 30px
 /*banner:final*/
 
 /*sessao-cards*/
-.sessao-projetos{display: flex;justify-content: center;border-top: 3px solid #1C5560;}
-.card{display: inline-block;width: 20rem;height: 30rem;margin:10px 55px;}
-.card-img-wrapper{width: 100%;height: 100%;background-color: black;border-radius: 10%; position: relative;}
-.card-img-wrapper img{object-fit: cover;width: 100%;height: 100%;border-radius: 10%;opacity: 0.8;}
-.card:hover .card-img-wrapper img{opacity: 0.5;transition: .5s;}
-
-div.card-info{position: absolute;text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0); opacity: 0; bottom: -40rem;}
-div.card-info h2{width: 50%;color: white;font-size: 2rem;margin-left: 15px;}
-div.card-info h3{margin-left: 15px;margin-bottom:20px ;color: rgb(59, 185, 133);font-size: 0.9rem;font-weight: lighter;}
-div.card-info buttom{visibility: hidden;width: 8rem;height: 2.5rem;border: none;}
-
-div.card:hover .card-info{transition: 1.5s;bottom: 25rem;opacity: 1;visibility: visible;}
-
-div.card:hover .card-info buttom{transition: 1.5s;bottom: 25rem;opacity: 1;visibility: visible; text-align: center; margin-left: 25px;}
-
+.projetos {display: flex;justify-content: space-evenly;margin-bottom: 2rem;}
+.card {width: 18rem;height: 25rem;position: relative;}
+.card-img-wrapper {width: 100%;height: 100%;background-color: #262626;border-radius: 0.5rem;}
+.card-img-wrapper img {object-fit: cover;width: 100%;height: 100%;border-radius: 0.5rem;opacity: 0.6;transition: opacity 0.3s;}
+.card:hover .card-img-wrapper img {opacity: 0.5;}
+.card-info {position: absolute;bottom: 0;opacity: 1;visibility: hodden;padding: 2rem;text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);transition: all 0.3s;}.card-info h2 {font-family: var(--font-primary);font-size: 2rem;font-weight: 500;color: #eee;}
+.card-info h3 {font-family: var(--font-action);font-weight: bolder;color: #389baf;margin-bottom: 1.5rem;}.btn {background: rgb(37,121,9);background: -webkit-linear-gradient(90deg, rgba(37,121,9,1) 0%, rgba(0,194,255,1) 70%);background: linear-gradient(90deg, rgba(37,121,9,1) 0%, rgba(0,194,255,1) 70%);font-family: var(--font-action);color: #eee;border-radius: 0.5rem;border: none;box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);}.card-info button {width: 8rem;height: 2.5rem;}
+.card:hover .card-info {bottom: 1rem;opacity: 1;visibility: visible;}
 /*sessao-cards:final*/
 
-
+/*Responsivos*/
 @media screen and (max-width: 768px){
-    header{background-color: #000000; height: auto;min-height: 65px;}
+header{background-color: #000000; height: auto;min-height: 65px;}
 
 /*logo*/
 .logo{color: white; text-shadow: -5px 4px 0.4rem rgb(121, 116, 116); font-size: 1rem; float: left; padding-left: 5%; padding-top: 5%; cursor: pointer;}
@@ -79,39 +81,30 @@ section p{color: white; font-size: 1rem; text-align: center; padding-top: 30px;}
 /*banner:final*/
 
 /*sessao-cards*/
-.sessao-projetos{display: flex;justify-content: center;border-top: 3px solid #1C5560;}
+.projetos {display: flex;justify-content: space-around;margin-bottom: 2rem;display: block;position: relative;} 
+.card {max-width: 13rem;max-height: 18.75rem;position: relative;border: 1px red solid;}
+.card-img-wrapper {padding: 0 2%;width: 100%;height: 100%;background-color: #262626;border-radius: 0.5rem;}  
+.card-img-wrapper img {object-fit: cover;width: 100%;height: 100%;border-radius: 0.5rem;opacity: 0.5;}
+.card-info {position: absolute;bottom: 0;opacity: 1;padding: 2rem;text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);}
+.card-info:hover {z-index: 1rem;}
+.card-info h2 {font-family: var(--font-primary);font-size: 1.5rem;font-weight: 500;color: #eee;}
+.card-info h3 {font-family: var(--font-action);font-weight: bolder;color: #389baf;margin-bottom: .35rem;}
+.btn {background: rgb(37,121,9);background: -webkit-linear-gradient(90deg, rgba(37,121,9,1) 0%, rgba(0,194,255,1) 70%);
+background: linear-gradient(90deg, rgba(37,121,9,1) 0%, rgba(0,194,255,1) 70%);font-family: var(--font-action);color: #eee;border-radius: 0.5rem;border: none;box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);}
+.card-info button {width: 6rem;height: 2.5rem;}
+/*sessao-cards:final*/}
 
-.card{display: inline-block;width: 20rem;height: 30rem;margin:10px 55px;}
+@media screen and (max-width: 767px){.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid; display: inline-block;}}
 
-.card-img-wrapper{width: 90%;height: 90%;background-color: black;border-radius: 10%; position: relative;}
+@media screen and (max-width: 670px){
+.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid; display: inline-block;}
+resp{padding: 5px;font-size: .8rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}}
 
-.card-img-wrapper img{object-fit: cover;width: 100%;height: 100%;border-radius: 10%;opacity: 0.5;}
+@media screen and (min-width: 430px){
+.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid;}
+.resp{padding: 5px;font-size: .8rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);  background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}}
 
+@media screen and (min-width: 430px){
+.card{margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid;}
 
-div.card-info{text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0)}
-
-div.card-info{
-    text-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0);}
-
-div.card-info h2{width: 50%;
-    color: white;
-    font-size: 2rem;
-    margin-left: 15px;}
-
-div.card-info h3{
-    margin-left: 15px;
-    margin-bottom:20px ;
-    color: rgb(59, 185, 133);
-    font-size: 0.9rem;
-    font-weight: lighter;}
-
-div.card-info buttom{
-    width: 8rem;
-    height: 2.5rem;
-    border: none;}
-
-    div.card:hover .card-info {transition: 1.5s; position: absolute;}
-    div.card:hover .card-info.segundo{transition: 1.5s;bottom:-15rem;}
-    div.card:hover .card-info.terceiro{transition: 1.5s;bottom:-45rem;}
-    div.card:hover .card-info buttom{transition: 1.5s; text-align: center; margin-left: 25px;}
-}
+.resp{padding: 5px;font-size: .8rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}}
