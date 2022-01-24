@@ -82,7 +82,7 @@ section p{color: white; font-size: 1rem; text-align: center; padding-top: 30px;}
 
 /*sessao-cards*/
 .projetos {display: flex;justify-content: space-around;margin-bottom: 2rem;display: block;position: relative;} 
-.card {max-width: 13rem;max-height: 18.75rem;position: relative;border: 1px red solid;}
+.card {max-width: 13rem;max-height: 18.75rem;position: relative;}
 .card-img-wrapper {padding: 0 2%;width: 100%;height: 100%;background-color: #262626;border-radius: 0.5rem;}  
 .card-img-wrapper img {object-fit: cover;width: 100%;height: 100%;border-radius: 0.5rem;opacity: 0.5;}
 .card-info {position: absolute;bottom: 0;opacity: 1;padding: 2rem;text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);}
@@ -94,17 +94,17 @@ background: linear-gradient(90deg, rgba(37,121,9,1) 0%, rgba(0,194,255,1) 70%);f
 .card-info button {width: 6rem;height: 2.5rem;}
 /*sessao-cards:final*/}
 
-@media screen and (max-width: 767px){.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid; display: inline-block;}}
+@media screen and (max-width: 767px){.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative; display: inline-block;}}
 
 @media screen and (max-width: 670px){
-.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid; display: inline-block;}
+.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative; display: inline-block;}
 resp{padding: 5px;font-size: .8rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}}
 
 @media screen and (min-width: 430px){
-.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid;}
+.card {margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;}
 .resp{padding: 5px;font-size: .8rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);  background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}}
 
 @media screen and (min-width: 430px){
-.card{margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;border: 1px red solid;}
+.card{margin-top: 2%;max-width: 20rem;max-height: 30rem;position: relative;}
 
 .resp{padding: 5px;font-size: .8rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);background: linear-gradient(90deg, rgba(37,121,9,1) 50%, rgba(0,194,255,1) 80%);}}
