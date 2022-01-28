@@ -30,7 +30,7 @@ header{background-color: #000000; height: 50px; width: 100%;}
 .menu{float: right; padding-top: 1%; padding-right: 2%;  word-spacing: 100px; position: relative;}
 .menu li{display: inline; font-family: var(--font-secundary);}
 .menu a{color: white; text-decoration: none; font-size: 1.3rem;}
-.menu a:hover{font-size: 1.5rem; color: #79AE92; transition: 0.5s; border-bottom: #79AE92 solid 1px;}
+.menu a:hover{color: #79AE92; transition: 0.5s; border-bottom: #79AE92 solid 1px;}
 /*menu:final*/
 
 /*==============----HOME-----==============*/
@@ -66,7 +66,7 @@ section p{color: white; font-size: 1.6rem; text-align: center; padding-top: 20px
 /*banner*/
 .banner-sobre{background-image: url(/img/img08.jpeg);height: auto;width: 100%;position: relative;}
 section h1{ text-align: center; color: #389baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2.69rem; font-family: var(--font-secundary);}
-section p{color: white; font-size: 1.36rem; text-align: justify; padding-top: 0.7px; padding-bottom: 20px;margin: 0 150px; font-family: var(--font-primary);}
+section p{color: white; font-size: 1.36rem; text-align: justify; padding-top: 0.7px; padding-bottom: 20px;margin: 0 10%; font-family: var(--font-primary);}
 .sobre-wrapper{background-color: rgba(0, 0, 0, 0.8);}
 /*banner:final*/
 
@@ -84,11 +84,18 @@ section p{color: white; font-size: 1.36rem; text-align: justify; padding-top: 0.
 /*==============----SOBRE:FINAL-----==============*/
 
 /*==============----CONTATOS-----==============*/
+.banner-contato{background-image: url(/img/img02.jpg);height: 500px;width: 100vw;position: relative; background-position: top left; background-repeat: no-repeat;background-size: 100vw;}
+
+section h1{text-align: center; color: #389baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2.69rem; font-family: var(--font-secundary);}
+
+section p{color: white; font-size: 1.36rem; text-align: justify;padding-top: 0.7px;padding-bottom: 20px;margin: 0 10%; font-family: var(--font-primary);}
+
+.contatos-wrapper{background-color: rgba(0, 0, 0, 0.8);}
 
 /*==============----CONTATOS:FINAL-----==============*/
 
 /*Rodapé*/
-footer{padding: 1rem 0;position: relative;bottom:0;width: 100%;background-color: #79AE92;}
+footer{padding: 1rem 0;position: relative;bottom:0;width: 100%;background-color: #79AE92; background-position: bottom;}
 .footer-single{bottom: 0;}
 .footer-single{font-size: 1rem;color: white;text-align: center; font-family: var(--font-secundary); }
 /*Rodapé:final*/
