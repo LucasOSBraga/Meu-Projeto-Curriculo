@@ -11,8 +11,10 @@
 
 /*Auxiliares*/
 *{margin: 0; padding: 0; box-sizing: border-box;}
+body{background-color: #1C5560;}
 .clear{clear: both;}
-.container{max-width: 100vw; margin: 0 auto; padding: 0; background-color: #1C5560;max-height: 100%; }
+.container{width: 100vw;height: 100vh; margin: 0; padding: 0; background-color: #1C5560; display: flexbox;flex-direction: row;justify-content: center;align-items: center}
+
 header{background-color: #000000; height: 50px; width: 100%;}
 .select{border-bottom: 3px solid #79AE92;text-shadow: 0 5px 0.5rem #79AE92;}
 .btn{padding: 5px;font-size: 1rem;color: white;border-radius: 10px;cursor: pointer;background: rgb(15, 255, 215);
@@ -35,8 +37,8 @@ header{background-color: #000000; height: 50px; width: 100%;}
 
 /*==============----HOME-----==============*/
 /*Rede social*/
-.rede-social{background-color: #79AE92; height: 80px; width: 100%;text-align: center; border-top:solid 3px#1C5560;}
-.rede-social a{color: #ccc; font-size: 4rem; margin:0px 3%;}
+.rede-social{background-color: #79AE92; height: auto; width: 100%;text-align: center; border-top:solid 3px#1C5560;}
+.rede-social a{color: #ccc; font-size: 2rem; margin:0px 3%;}
 .rede-social a:hover{text-shadow:0px 3px 0.5rem rgb(0, 0, 0); font-size: 4.2rem; transition: .5s; color: #1C5560;}
 /*Rede social:Final*/
 
@@ -65,44 +67,41 @@ section p{color: white; font-size: 1.6rem; text-align: center; padding-top: 20px
 /*==============----SOBRE-----==============*/
 /*banner*/
 .banner-sobre{background-image: url(/img/img08.jpeg);height: auto;width: 100%;position: relative;}
-section h1{ text-align: center; color: #389baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2.69rem; font-family: var(--font-secundary);}
+section h1{ text-align: center; color: #388baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2.69rem; font-family: var(--font-secundary);}
 section p{color: white; font-size: 1.36rem; text-align: justify; padding-top: 0.7px; padding-bottom: 20px;margin: 0 10%; font-family: var(--font-primary);}
 .sobre-wrapper{background-color: rgba(0, 0, 0, 0.8);}
 /*banner:final*/
 
 /*icones*/
 .icons{margin: 6px;padding: 20px;}
-.icon-sobre{left: 35%;top: 50%;transform: translate(-60%, -0%);position: relative;display: inline-block;font-size: 18rem;margin: -20px;width: 25%;padding: -60px;}
+.icon-sobre{left: 35%;top: 50%;transform: translate(-60%, -0%);position: relative;display: inline-block;font-size: 13rem;margin: -20px;width: 25%;padding: -60px;}
 .icon-html{color: #E15D5D;}
 .icon-js{color: #E9EC5C;}
 .icon-css{color: #51BFBF;}
-.icon-html:hover{font-size: 305px;margin: -20px;padding: -50px;transition: 0.5s;}
-.icon-js:hover{font-size: 305px;margin: -20px;padding: -50px;transition: 0.5s;}
-.icon-css:hover{font-size: 305px;margin: -20px;padding: -50px;transition: 0.5s;}
 /*icones:final*/
 
 /*==============----SOBRE:FINAL-----==============*/
 
 /*==============----CONTATOS-----==============*/
-.banner-contato{background-image: url(/img/img02.jpg);background-position: top left; background-repeat: no-repeat;background-size: 100vw;background-image: url(/img/img02.jpg);height: auto;width: 100%;position: relative;}
-section h1{ text-align: center; color: #389baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2.69rem; font-family: var(--font-secundary);}
-.contato-wrapper{background-color: rgba(0, 0, 0, 0.8);}
-
 /*banner*/
-.banner{background-image: url(/img/Img01.png);height: 140px;width: 100%;}
-section h1{ text-align: center; color: #389baf; text-shadow: rgba(255, 255, 255, 0.5) 0 3px 0.8rem; font-size: 2.5rem;}
-section  .contato-wrapper a{color: white; font-size: 3rem; padding-top: 20px; font-family: var(--font-secundary); display: block; padding-left: 20%;}
+.banner-contato{background-image: url(/img/img02.jpg);background-position: top left; background-repeat: no-repeat;background-size: 100%;background-image: url(/img/img02.jpg);height: auto;width: 100%;position: relative;}
+.contato-wrapper{background-color: rgba(0, 0, 0, 0.8);}
+section .contato-wrapper a{color: white; font-size: 1,5rem; padding-top: 2%; font-family: var(--font-secundary); display: block; padding-left: 10%;}
+
+div.links{font-weight:lighter;}
+
+div.links a{text-decoration: none; border:1px solid red; max-width:40%;}
+div.links a:hover{text-decoration: underline; transition: 0.5s; padding: 0 auto;}
 /*banner:final*/
-
-div.background-contatos{background-color: #1C5560; height: 184px; width: 100%;}
-
 /*==============----CONTATOS:FINAL-----==============*/
 
-/*Rodapé*/
-footer{padding: 1rem 0;position: relative;bottom:0;width: 100%;background-color: #79AE92;}
-.footer-single{bottom: 0;background-position: bottom; background-position-y: bottom;}
+/*==========---------Rodapé---------==========*/
+
+footer{padding: 1rem;position: absolute;bottom:0;width: 100%;background-color: #79AE92;}
+.footer-single{bottom: 0;background-position: bottom; display: block;}
 .footer-single{font-size: 1rem;color: white;text-align: center; font-family: var(--font-secundary); }
-/*Rodapé:final*/
+
+/*==========---------Rodapé:final---------==========*/
 
 /*=================------------Responsivos------------=================*/
 @media screen and (max-width: 768px){
