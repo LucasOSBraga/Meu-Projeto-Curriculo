@@ -97,7 +97,7 @@ div.links a:hover{text-decoration: underline; transition: 0.5s; padding: 0 auto;
 
 /*==========---------Rodapé---------==========*/
 
-footer{padding: 1rem;position: absolute;bottom:0;width: 100%;background-color: #79AE92;}
+footer{padding: 1rem;position: relative;bottom:0;width: 100%;background-color: #79AE92;}
 .footer-single{bottom: 0;background-position: bottom; display: block;}
 .footer-single{font-size: 1rem;color: white;text-align: center; font-family: var(--font-secundary); }
 
